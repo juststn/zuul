@@ -12,14 +12,17 @@ room::room(string newname, string newdesc) {
   description = newdesc;
 }
 
+//deconstructor
 room::~room(){
 
 }
 
+//get name
 string room::getName() {
   return name;
 }
 
+//get description
 string room::getDescription() {
   return description;
 }
@@ -43,20 +46,24 @@ string room::getExits() {
   return e;
 }
 
+//show items
 string room::showItems() {
 
   return itemList.showItems();
   
 }
 
+//set items
 void room::setItems(int i1, int i2, int i3, int i4, int i5) {
   itemList.initItems(i1,i2,i3,i4,i5);
 }
 
+//set name
 void room::setName(string newname){
   name = newname;
 }
 
+//set description
 void room::setDescription(string newdescription){
   description = newdescription;
 }
@@ -77,7 +84,7 @@ void room::setExits(room* n, room* e, room* s, room* w) {
      exitMap["WEST"] = w;
 }
 
-
+//try to move
 room* room::goExit(string newExit) {
 
   // if inpuy exit does not exist, then stay in the same room
