@@ -4,15 +4,15 @@
 #include "room.h"
 #include "item.h"
 
+//This program is a text adventure game that lets the player move through 15 total rooms, pickup items, and drop items (5 total items.
+//The winning condition is gathering all 5 items in the rooms (all located across the aisleway) and bringing them into the pilots room
+//The losing condition is taking over 100 moves which will cause the plane to crash.
+
 using namespace std;
 
 void setMap(vector<room*>* roomList, room* &currentRoom, item &playerBucket);
 
 void setItem(vector<item*>* itemList);
-
-//This program is a text adventure game that lets the player move through 15 total rooms, pickup items, and drop items (5 total items.
-//The winning condition is gathering all 5 items in the rooms (all located across the aisleway) and bringing them into the pilots room
-//The losing condition is taking over 100 moves which will cause the plane to crash.
 
 int main(){
   vector<room*>* roomList = new vector<room*>;
