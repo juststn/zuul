@@ -21,6 +21,7 @@ item::item() {
   
 }
 
+//deconstructor
 item::~item(){
 
 }
