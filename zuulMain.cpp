@@ -131,7 +131,7 @@ void setMap(vector<room*>* roomList, room* &currentRoom, item &playerBucket) {
   r4->setExits(r5, NULL, r2, NULL);
   r5->setExits(r7, NULL, r4, r6);
   r6->setExits(NULL, r5, NULL, NULL);
-  r7->setExits(r8, NULL, r9, NULL);
+  r7->setExits(r8, NULL, r5, NULL);
   r8->setExits(r9, r15, r7, r14);
   r9->setExits(r10, NULL, r8, NULL);
   r10->setExits(r13, r12, r9, r11);
